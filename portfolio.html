@@ -22,13 +22,13 @@
 
     <header class="page-header">
       <div class="container page-header-container">
+        <a class="logo link" href="./index.html">
+          <span class="logo-first">Web</span>Studio
+        </a>
         <nav class="navigation">
-          <a class="logo link" href="./index.html">
-            <span class="logo-first">Web</span>Studio
-          </a>
-          <ul class="menu list">
+          <ul class="header-menu list">
             <li>
-              <a class="menu-iteam link" href="./index.html">Studio </a>
+              <a class="menu-iteam link current" href="./index.html">Studio </a>
             </li>
             <li>
               <a class="menu-iteam link current" href="./portfolio.html"
@@ -40,7 +40,12 @@
             </li>
           </ul>
         </nav>
-        <address>
+        <button type="button" class="header-button-burger" js-open-menu>
+          <svg class="icon-burger" width="32" height="22">
+            <use href="./images/icon.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+        <address class="header-contacts">
           <ul class="contacts list">
             <li>
               <a class="contact-iteam link" href="mailto:info@devstudio.com"
@@ -291,7 +296,7 @@
 
     <!-- =================== FOOTER =================== -->
 
-    <footer class="footer">
+    <footer class="footer-section section">
       <div class="footer-container container">
         <div class="footer-logo-text">
           <div class="logo-footer">
@@ -338,7 +343,7 @@
             </li>
           </ul>
         </div>
-        <form>
+        <form class="footer-form">
           <label for="mail" class="footer-label text"> Subscribe </label>
           <span class="footer-input">
             <input
@@ -348,11 +353,15 @@
               placeholder="E-mail"
               class="footer-input-field"
             />
-
             <button class="footer-button" type="submit">Subscribe</button>
           </span>
         </form>
       </div>
     </footer>
+
+    <!-- ==================== SCRIPT =================== -->
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
