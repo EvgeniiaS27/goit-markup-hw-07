@@ -1013,6 +1013,12 @@ body {
   row-gap: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-form {
+    justify-content: start;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-form {
     display: block;
